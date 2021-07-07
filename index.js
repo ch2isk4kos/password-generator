@@ -73,12 +73,12 @@ Options:
 { length: '24', save: true }
 */
 
-// program
-//   .option("-len, --length <number>", "length of password", "10")
-//   .option("-s, --save", "save password to db")
-//   .parse(); // code
+program
+  .option("-len, --length <number>", "length of password", "10")
+  .option("-s, --save", "save password to db")
+  .parse(); // code
 
 const { length, save, num, sym } = program.opts();
 
-const generatePassword = createPassword(length);
-console.log(generatePassword);
+const generatedPassword = createPassword(length);
+console.log(generatedPassword);
