@@ -11,7 +11,7 @@ console.log(process.argv);
 //   '/user/repos/project/node-password-generator/index'
 // ]
 
-// C:/user/from/root/of/project> node index generate
+// C:/from/root/of/project> node index generate
 
 // [
 //   '/user/repos/directories/node/version/bin/node',
