@@ -1,21 +1,10 @@
+#!/usr/bin/env node
 const program = require("commander");
 const chalk = require("chalk");
 const createPassword = require("./utils/createPassword");
 const savePassword = require("./utils/savePassword");
 
 program.version("1.0.0").description("Commander Password Generator Demo"); // code
-
-// from the console: node index -h
-
-/*
-  Usage: index [options]
-
-  Commander Password Generator Demo
-
-  Options:
-    -V, --version  output the version number
-    -h, --help     display help for command
-*/
 
 // program
 //   .command("generate")
@@ -24,55 +13,12 @@ program.version("1.0.0").description("Commander Password Generator Demo"); // co
 //   })
 //   .parse(); // code
 
-// from the console: node index generate
-
-/*
-  Generated!
-*/
-
-// program.option("-len, --length <number>", "length of password", "10").parse(); // code
-
-// from the console: node index -h
-
-/*
-Usage: index [options]
-
-Commander Password Generator Demo
-
-Options:
--V, --version   output the version number
--len, --length  length of password
--h, --help      display help for command
-*/
-
-// console.log(program.opts()); // code
-
-// from the console: node index
-
-/*
-  { length: '10' }
-*/
-
-// from the console: node index --length=24
-
-/*
-  { length: '24' }
-*/
-
 // program
 //   .option("-len, --length <number>", "length of password", "10")
 //   .option("-s, --save", "save password to db")
 //   .option("-!n, --no-numbers", "generate password without numbers")
 //   .option("-!sym, --no-symbols", "generate password without symbols")
 //   .parse(); // code
-
-// console.log(program.opts()); // code
-
-// from the console: node index --length=24 --save
-
-/*
-{ length: '24', save: true }
-*/
 
 program
   .option("-len, --length <number>", "length of password", "10")
@@ -85,3 +31,6 @@ const generatedPassword = createPassword(length);
 if (save) savePassword(generatedPassword);
 
 console.log(`${chalk.blue("Password:")} ${chalk.bold(generatedPassword)}`);
+
+// after revisions to package.json
+// from the console: npm link
