@@ -1,4 +1,11 @@
 {
+  "name": "wordpass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "perferGlobal": true,
+  "bin": "./index.js",
+  "author": "Chris Kakos",
+  "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.1",
     "clipboardy": "^2.3.0",
