@@ -1,6 +1,6 @@
+const program = require("commander");
+const chalk = require("chalk");
 const createPassword = require("./createPassword");
-
-const program = require("commander"); // code
 
 program.version("1.0.0").description("Commander Password Generator Demo"); // code
 
@@ -81,4 +81,4 @@ program
 const { length, save, num, sym } = program.opts();
 
 const generatedPassword = createPassword(length);
-console.log(generatedPassword);
+console.log(`${chalk.green("Password:")} ${chalk.bold(generatedPassword)}`);
