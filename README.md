@@ -24,6 +24,6 @@ if (process.argv[2] === "generate") console.log("Generated!");
 
 ## Commander
 
-## BcryptJS
+## [BcryptJS](https://javascript.plainenglish.io/how-to-create-a-strong-and-secure-password-in-nodejs-which-cannot-be-decrypted-24d046b24958)
 
 ## Chalk
